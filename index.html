@@ -5,393 +5,260 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>America Gaona Borges | Software Engineer</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <nav>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <div class="container">
-            <div class="logo">AGB</div>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <a class="navbar-brand fw-bold" href="#" style="color: #671065;">AGB</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#leadership">Leadership</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <section class="hero">
+    <!-- About Section with Carousel -->
+    <section class="hero-section" section id ="about">
         <div class="container">
-            <h1>America Gaona Borges</h1>
-            <div class="subtitle">Software Engineer | AI & Robotics Enthusiast</div>
-            <p>CS senior at Berea College building full-stack applications, embedded systems, and AI-powered tools.
-                Passionate about creating technology that makes a difference.</p>
-            <div class="cta-buttons">
-                <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                <a href="mailto:gaonaborgesa@berea.edu" class="btn btn-secondary">Email Me</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <div class="profile-photo">
-                    <img src="images/IMG_9117.jpg" alt="Ziplining"
-                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;" />
-                </div>
-                <div class="about-text">
-                    <h3>Hi, I'm America!</h3>
+            <div class="row align-items-center">
+                <!-- Text -->
+                <div class="col-lg-6">
+                    <h1>America Gaona Borges</h1>
                     <p>
-                        I'm a senior at Berea College pursuing a B.A. in Computer Science, graduating in May 2026.
+                        I'm a senior majoring in Computer Science and graduating from Berea College in May 2026.
                         I love diving into new challenges and exploring different areas of tech, particularly in
-                        software engineering, robotics, and AI-driven applications.
+                        design, AI/ML, and robotics.
                     </p>
                     <p>
                         I am currently seeking entry-level opportunities where I can contribute my skills while learning
-                        from industry professionals. My projects and internships have given me hands-on skills in
-                        full-stack development (NestJS, React, PostgreSQL), AI/ML (LangChain, RAG pipelines, Ollama),
-                        and embedded systems (nRF52 microcontrollers, C, firmware debugging).
+                        from industry professionals. My coursework, projects, and internships have given me hands-on skills in
+                        human-centered computing, software development, and computational intelligence.
                     </p>
                     <p>
-                        Beyond coding, I've developed strong leadership and collaboration skills as Co-Lead TA for the
-                        Computer Science Department. I'm also deeply committed to increasing diversity and inclusion in
-                        tech
-                        - as President of Society of Hispanic Professional Engineers and Public Relations Officer for
-                        Girls Who Code,
-                        I work to create spaces that empower underrepresented voices in STEM.
+                        I've developed strong leadership and collaboration skills as Lead TA for the
+                        Computer Science Department. I'm also actively involved in organizations like SHPE and GWC,
+                        where I aim to increase diversity and inclusion in tech.
                     </p>
+                    <a href="#contact" class="btn btn-primary-custom">Contact Me</a>
+                </div>
+
+                <!-- Carousel -->
+                    <div class="col-lg-6 mt-4 mt-lg-0">
+                        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/IMG_1178.jpg" class="d-block w-100" alt="SWE'24 Annual Conference">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>SWE'24 Annual Conference</h5>
+                                        <p>My first ever tech conference experience!</p>
+                                    </div>
+                                </div>
+                            <div class="carousel-item">
+                                <img src="images/IMG_3870.jpg" class="d-block w-100" alt="Computer History Museum">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Computer History Museum</h5>
+                                    <p>Visit to the Computer History Museum in Mountain View, CA</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/IMG_4723.PNG" class="d-block w-100" alt="Summer Internship Presentation">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Summer Internship Presentation</h5>
+                                    <p>Presenting my summer internship project at Berea College</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/IMG_1704.jpg" class="d-block w-100" alt="Mexican Flag">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Si se puede!</h5>
+                                    <p>Photo from my visit to Mexico City</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/IMG_6119.jpg" class="d-block w-100" alt="GWC Campus Event">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>GWC Campus Event</h5>
+                                    <p>Featured in the GWC national email for March!</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/IMG_0146.jpg" class="d-block w-100" alt="Purdue University">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Purdue University</h5>
+                                    <p>Exploring this vibrant campus!</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/IMG_3570.jpg" class="d-block w-100" alt="Redwood National Park">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Redwood National Park</h5>
+                                    <p>These trees are massive!</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/IMG_9877.JPG" class="d-block w-100" alt="Ziplining">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Ziplining!</h5>
+                                    <p>Lexington, KY</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/IMG_2955.jpg" class="d-block w-100" alt="Shakira Concert">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Shakira, Shakira!</h5>
+                                    <p>Photo from the Shakira concert I attended</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-
-    <section id="gallery">
+    <!-- Experience & Skills Section -->
+    <section id="experience" class="section-light">
         <div class="container">
-            <h2>Gallery</h2>
-            <p class="section-subtitle">Moments from my journey in tech and life</p>
-
-            <div class="slideshow-container">
-                <div class="slide active">
-                    <img src="images/IMG_1178.jpg" alt="SWE'24 Annual Conference">
-                    <div class="slide-content">
-                        <h3>SWE'24 Annual Conference</h3>
-                        <p>My first ever tech conference experience!</p>
-                    </div>
-                </div>
-
-                <div class="slide">
-                    <img src="images/IMG_3870.jpg" alt="Computer History Museum">
-                    <div class="slide-content">
-                        <h3>Computer History Museum</h3>
-                        <p>Photo from my visit to the Computer History Museum in Mountain View, CA.</p>
-                    </div>
-                </div>
-
-                <div class="slide">
-                    <img src="images/IMG_4723.PNG" alt="Summer Internship Presentation">
-                    <div class="slide-content">
-                        <h3>Summer Internship Presentation at Berea College</h3>
-                        <p>I had the opportunity to present my summer internship project, showcasing my work and
-                            experiences.</p>
-                    </div>
-                </div>
-
-                <div class="slide">
-                    <img src="images/IMG_1704.jpg" alt="Mexican Flag">
-                    <div class="slide-content">
-                        <h3>Si se puede!</h3>
-                        <p>Photo from my visit to Mexico City.</p>
-                    </div>
-                </div>
-
-                <div class="slide">
-                    <img src="images/IMG_6119.jpg" alt="GWC Campus Event">
-                    <div class="slide-content">
-                        <h3>GWC Campus Event</h3>
-                        <p>We were featured in the GWC national email for the month of March!</p>
-                    </div>
-                </div>
-
-                <div class="slide">
-                    <img src="images/IMG_0146.jpg" alt="Purdue University">
-                    <div class="slide-content">
-                        <h3>Purdue University</h3>
-                        <p>I loved exploring this campus and its vibrant atmosphere!</p>
-                    </div>
-                </div>
-
-                <div class="slide">
-                    <img src="images/IMG_3570.jpg" alt="Redwood National Park">
-                    <div class="slide-content">
-                        <h3>Redwood National Park</h3>
-                        <p>These trees are massive!</p>
-                    </div>
-                </div>
-
-                <div class="slide">
-                    <img src="images/IMG_9877.JPG" alt="Ziplining">
-                    <div class="slide-content">
-                        <h3>Ziplining!</h3>
-                        <p>Lexington, KY</p>
-                    </div>
-                </div>
-
-                <div class="slide">
-                    <img src="images/IMG_2955.jpg" alt="Shakira Concert">
-                    <div class="slide-content">
-                        <h3>Shakira, Shakira!</h3>
-                        <p>Photo from the Shakira concert I attended.</p>
-                    </div>
-                </div>
-
-
-                <!-- Navigation arrows -->
-                <button class="slide-nav prev" onclick="changeSlide(-1)">❮</button>
-                <button class="slide-nav next" onclick="changeSlide(1)">❯</button>
-
-                <!-- Dots indicator -->
-                <div class="slide-dots">
-                    <!-- Dots will be generated automatically by JavaScript -->
-                </div>
+            <div class="text-center">
+                <h2 class="section-heading">Experience & Skills</h2>
             </div>
-    </section>
+            <p class="text-center text-muted mb-5">Building real-world solutions through internships and on-campus work</p>
 
-    <!-- *********************************************************************************************** -->
-
-    <section id="experience">
-        <div class="container">
-            <h2>Experience</h2>
-            <p class="section-subtitle">Building real-world solutions through internships and on-campus work</p>
-
-            <div class="experience-grid">
-                <div class="experience-card">
-                    <h3>Co-Lead Computer Science Teaching Assistant</h3>
-                    <div class="company">Berea College | Berea, KY</div>
-                    <div class="date">August 2024 – Present</div>
-                    <p>
-                        I support the Berea College Computer Science Department as a Co-Lead Teaching Assistant, where I
-                        mentor and onboard new TAs and help coordinate weekly meetings to ensure consistency in teaching
-                        support. I contributed to building the department's website using HTML, CSS, and JavaScript,
-                        creating a central hub of information for students exploring the CS major. I also lead tutoring
-                        sessions in robotics and game design, and provide detailed feedback on capstone projects to help
-                        students navigate technical challenges and scope feasibility.
-                    </p>
-                </div>
-
-                <div class="experience-card">
-                    <h3>Software Engineer Intern</h3>
-                    <div class="company">NextGen Justice | San Jose, CA</div>
-                    <div class="date">June 2025 – August 2025</div>
-                    <p>
-                        I worked on the development of a full-stack, AI-powered legal
-                        assistance platform. This application integrates fine-tuned AI models with a modular
-                        Retrieval-Augmented Generation (RAG) pipeline to deliver context-aware legal responses, source
-                        citations, and document-based reasoning.
-                    </p>
-                    <p>
-                        On the backend, I built RESTful APIs with NestJS, PostgreSQL, and Swagger UI, including a
-                        complete user settings service following the Model-Controller-Service architecture. I enhanced
-                        RAG pipelines by building a dedicated prompt template service with LangChain, and created a
-                        TypeScript endpoint that generates and stores document embeddings with Ollama and pgvector for
-                        scalable semantic search. On the frontend, I designed user flows and wireframes by hand before
-                        translating them into Figma, directly shaping the application’s user experience.
-                    </p>
-                </div>
-
-                <div class="experience-card">
-                    <h3>Robotics Engineering Intern</h3>
-                    <div class="company">Purdue University | West Lafayette, IN</div>
-                    <div class="date">May 2024 – July 2024</div>
-                    <p>
-                        I helped design a smart container system using embedded systems and ML algorithms to
-                        analyze eating habits. My work included programming nRF52 microcontrollers in Embedded C,
-                        integrating multiple sensors (gyroscope, accelerometer, and temperature), and debugging firmware
-                        with JTAG and SEGGER Embedded Studio to improve system performance and reliability. I also
-                        authored and presented a paper on SPI, TWI, UART, and BLE communication protocols to peers,
-                        strengthening my ability to communicate technical concepts.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <p class="section-subtitle">Things I've built to learn and solve problems</p>
-
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        💻
-                        <a href="https://bereacshub.live/" target="_blank" class="live-btn">🌐 View Live</a>
-                    </div>
-                    <div class="project-content">
-                        <h3>CS TA Website</h3>
-                        <p>Collaborative web development project creating a comprehensive website for Berea College's CS
-                            Teaching Assistant program. Serves as both a learning platform and practical showcase for
-                            the department.</p>
-                        <div class="tech-tags">
-                            <span class="tech-tag">HTML/CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">Collaboration</span>
-                        </div>
-                        <a href="https://github.com/BC-CS-Website-Team/CS_TA_Website" target="_blank"
-                            class="github-link" title="View on GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">🎯</div>
-                    <div class="project-content">
-                        <h3>Bratz Girls Quiz App</h3>
-                        <p>Interactive flashcard web app for quiz practice and learning. Users can test knowledge by
-                            guessing before flipping cards, with visual feedback and ordered navigation through card
-                            sets.</p>
-                        <div class="tech-tags">
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">HTML/CSS</span>
-                            <span class="tech-tag">Web Development</span>
-                        </div>
-                        <a href="https://github.com/gaonaborgesa/P2.Flashcards" target="_blank" class="github-link"
-                            title="View on GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">🤖</div>
-                    <div class="project-content">
-                        <h3>Bug Navigation Algorithm</h3>
-                        <p>Implemented autonomous navigation system in C++ allowing robot to drive to specific
-                            coordinates and avoid obstacles. Uses odometry, frame transformations, and bug navigation
-                            algorithm to achieve 3cm positioning accuracy.</p>
-                        <div class="tech-tags">
-                            <span class="tech-tag">C++</span>
-                            <span class="tech-tag">Robotics</span>
-                            <span class="tech-tag">Autonomous Navigation</span>
-                        </div> <a href="https://github.com/gaonaborgesa/bug-navigation" target="_blank"
-                            class="github-link" title="View on GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">🍔</div>
-                    <div class="project-content">
-                        <h3>Fast Food Favorites</h3>
-                        <p>Web application presenting popular fast food chains and their slogans in an organized,
-                            responsive card format. Built with clean UI and cohesive theming.</p>
-                        <div class="tech-tags">
-                            <span class="tech-tag">HTML/CSS</span>
-                            <span class="tech-tag">Responsive Design</span>
-                            <span class="tech-tag">UI/UX</span>
-                        </div>
-                        <a href="https://github.com/gaonaborgesa/P1.Community-Board" target="_blank" class="github-link"
-                            title="View on GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">🤖</div>
-                    <div class="project-content">
-                        <h3>RAG Customer Support Chatbot</h3>
-                        <p>Built customer support chatbot using Next.js, Llama API, and ChromaDB to facilitate user
-                            inquiries and provide instant support.</p>
-                        <div class="tech-tags">
-                            <span class="tech-tag">Next.js</span>
-                            <span class="tech-tag">AI/ML</span>
-                            <span class="tech-tag">ChromaDB</span>
-                            <span class="tech-tag">RAG</span>
-                        </div>
-                        <a href="https://github.com/dixita9/ai_customer_support" target="_blank" class="github-link"
-                            title="View on GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">🌐</div>
-                    <div class="project-content">
-                        <h3>Multilingual Translation Tool</h3>
-                        <p>Python-based translation tool using APIs to enhance multilingual accessibility. Created to
-                            support language learning program for adult English learners.</p>
-                        <div class="tech-tags">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">APIs</span>
-                            <span class="tech-tag">Translation</span>
+            <div class="row g-4">
+                <!-- Experience 1 -->
+                <div class="col-12">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: #001F5B;">Lead Computer Science Teaching Assistant</h5>
+                            <h6 class="text-muted mb-2">Berea College | Berea, KY</h6>
+                            <p class="text-muted small mb-3"><strong>August 2024 – Present</strong></p>
+                            <p class="card-text">
+                                I support the Berea College Computer Science Department as a Co-Lead Teaching Assistant, where I
+                                mentor and onboard new TAs and help coordinate weekly meetings to ensure consistency in teaching
+                                support. I contributed to building the department's website using HTML, CSS, and JavaScript,
+                                creating a central hub of information for students exploring the CS major. I also lead tutoring
+                                sessions in robotics and game design, and provide detailed feedback on capstone projects to help
+                                students navigate technical challenges and scope feasibility.
+                            </p>
+                            <div class="mt-3">
+                                <span class="badge bg-secondary me-1 mb-2">HTML/CSS</span>
+                                <span class="badge bg-secondary me-1 mb-2">JavaScript</span>
+                                <span class="badge bg-secondary me-1 mb-2">Python</span>
+                                <span class="badge bg-secondary me-1 mb-2">C++</span>
+                                <span class="badge bg-secondary me-1 mb-2">Git/GitHub</span>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-            </div>
-        </div>
-    </section>
-
-    <section id="skills">
-        <div class="container">
-            <h2>Technical Skills</h2>
-            <div class="skills-container">
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3>Languages</h3>
-                        <div class="skill-list">
-                            <span class="skill-item">Python</span>
-                            <span class="skill-item">TypeScript</span>
-                            <span class="skill-item">JavaScript</span>
-                            <span class="skill-item">C++</span>
-                            <span class="skill-item">Embedded C</span>
-                            <span class="skill-item">HTML/CSS</span>
+                <!-- Experience 2 -->
+                <div class="col-12">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: #001F5B;">Software Engineer Intern</h5>
+                            <h6 class="text-muted mb-2">NextGen Justice | San Jose, CA</h6>
+                            <p class="text-muted small mb-3"><strong>June 2025 – August 2025</strong></p>
+                            <p class="card-text">
+                                I worked on the development of a full-stack, AI-powered legal assistance platform. This application 
+                                integrates fine-tuned AI models with a modular Retrieval-Augmented Generation (RAG) pipeline to 
+                                deliver context-aware legal responses, source citations, and document-based reasoning.
+                            </p>
+                            <p class="card-text">
+                                On the backend, I built RESTful APIs with NestJS, PostgreSQL, and Swagger UI, including a
+                                complete user settings service following the Model-Controller-Service architecture. I enhanced
+                                RAG pipelines by building a dedicated prompt template service with LangChain, and created a
+                                TypeScript endpoint that generates and stores document embeddings with Ollama and pgvector for
+                                scalable semantic search. On the frontend, I designed user flows and wireframes by hand before
+                                translating them into Figma, directly shaping the application's user experience.
+                            </p>
+                            <div class="mt-3">
+                                <span class="badge bg-secondary me-1 mb-2">TypeScript</span>
+                                <span class="badge bg-secondary me-1 mb-2">NestJS</span>
+                                <span class="badge bg-secondary me-1 mb-2">Node.js</span>
+                                <span class="badge bg-secondary me-1 mb-2">React</span>
+                                <span class="badge bg-secondary me-1 mb-2">PostgreSQL</span>
+                                <span class="badge bg-secondary me-1 mb-2">LangChain</span>
+                                <span class="badge bg-secondary me-1 mb-2">Prisma</span>
+                                <span class="badge bg-secondary me-1 mb-2">Docker</span>
+                                <span class="badge bg-secondary me-1 mb-2">Figma</span>
+                            </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="skill-category">
-                        <h3>Frameworks & Libraries</h3>
-                        <div class="skill-list">
-                            <span class="skill-item">NestJS</span>
-                            <span class="skill-item">Node.js</span>
-                            <span class="skill-item">React</span>
-                            <span class="skill-item">LangChain</span>
-                            <span class="skill-item">Prisma</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <h3>Embedded Systems</h3>
-                        <div class="skill-list">
-                            <span class="skill-item">Microcontroller Programming</span>
-                            <span class="skill-item">Firmware Development</span>
-                            <span class="skill-item">SPI</span>
-                            <span class="skill-item">TWI</span>
-                            <span class="skill-item">UART</span>
-                            <span class="skill-item">BLE</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <h3>Tools & Platforms</h3>
-                        <div class="skill-list">
-                            <span class="skill-item">Git/GitHub</span>
-                            <span class="skill-item">Docker</span>
-                            <span class="skill-item">AWS S3</span>
-                            <span class="skill-item">PostgreSQL</span>
-                            <span class="skill-item">Figma</span>
-                            <span class="skill-item">JTAG</span>
-                            <span class="skill-item">SEGGER</span>
+                <!-- Experience 3 -->
+                <div class="col-12">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: #001F5B;">Robotics Engineering Intern</h5>
+                            <h6 class="text-muted mb-2">Purdue University | West Lafayette, IN</h6>
+                            <p class="text-muted small mb-3"><strong>May 2024 – July 2024</strong></p>
+                            <p class="card-text">
+                                I helped design a smart container system using embedded systems and ML algorithms to
+                                analyze eating habits. My work included programming nRF52 microcontrollers in Embedded C,
+                                integrating multiple sensors (gyroscope, accelerometer, and temperature), and debugging firmware
+                                with JTAG and SEGGER Embedded Studio to improve system performance and reliability. I also
+                                authored and presented a paper on SPI, TWI, UART, and BLE communication protocols to peers,
+                                strengthening my ability to communicate technical concepts.
+                            </p>
+                            <div class="mt-3">
+                                <span class="badge bg-secondary me-1 mb-2">Embedded C</span>
+                                <span class="badge bg-secondary me-1 mb-2">C++</span>
+                                <span class="badge bg-secondary me-1 mb-2">Microcontroller Programming</span>
+                                <span class="badge bg-secondary me-1 mb-2">Firmware Development</span>
+                                <span class="badge bg-secondary me-1 mb-2">SPI</span>
+                                <span class="badge bg-secondary me-1 mb-2">TWI</span>
+                                <span class="badge bg-secondary me-1 mb-2">UART</span>
+                                <span class="badge bg-secondary me-1 mb-2">BLE</span>
+                                <span class="badge bg-secondary me-1 mb-2">JTAG</span>
+                                <span class="badge bg-secondary me-1 mb-2">SEGGER</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -399,75 +266,236 @@
         </div>
     </section>
 
-    <section id="leadership">
+    <!-- Projects Section -->
+    <section id="projects" class="section-white">
         <div class="container">
-            <h2>Leadership & Community</h2>
-            <p class="section-subtitle">Committed to increasing diversity and inclusion in tech</p>
+            <div class="text-center">
+                <h2 class="section-heading">Projects</h2>
+            </div>
+            <p class="text-center text-muted mb-5">Things I've built to learn and solve problems</p>
 
-            <div class="leadership-grid">
-                <div class="leadership-card">
-                    <div class="leadership-icon">🎓</div>
-                    <h3>Society of Hispanic Professional Engineers</h3>
-                    <div class="role">President</div>
-                    <p>Leading initiatives and campus events to promote minority engagement in STEM.</p>
+            <div class="row g-4">
+                <!-- CS TA Website -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card h-100">
+                        <div class="card-body">
+                            <a href="https://github.com/BC-CS-Website-Team/CS_TA_Website" target="_blank" class="github-icon">
+                                <i class="bi bi-github"></i>
+                            </a>
+                            <h5 class="card-title">CS TA Website</h5>
+                            <p class="card-text">Collaborative web development project creating a comprehensive website for Berea College's CS
+                                Teaching Assistant program. Serves as both a learning platform and practical showcase for
+                                the department.</p>
+                            <div class="mt-3">
+                                <span class="badge me-1 mb-1">HTML/CSS</span>
+                                <span class="badge me-1 mb-1">JavaScript</span>
+                                <span class="badge me-1 mb-1">Collaboration</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="leadership-card">
-                    <div class="leadership-icon">💻</div>
-                    <h3>Girls Who Code</h3>
-                    <div class="role">Public Relations Officer</div>
-                    <p>Boosting campus presence and participation to foster mentorship and inclusion in computing fields
-                        for women and underrepresented groups.</p>
+                <!-- Bratz Girls Quiz App -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card h-100">
+                        <div class="card-body">
+                            <a href="https://github.com/gaonaborgesa/P2.Flashcards" target="_blank" class="github-icon">
+                                <i class="bi bi-github"></i>
+                            </a>
+                            <h5 class="card-title">Bratz Girls Quiz App</h5>
+                            <p class="card-text">Interactive flashcard web app for quiz practice and learning. Users can test knowledge by
+                                guessing before flipping cards, with visual feedback and ordered navigation through card
+                                sets.</p>
+                            <div class="mt-3">
+                                <span class="badge me-1 mb-1">JavaScript</span>
+                                <span class="badge me-1 mb-1">HTML/CSS</span>
+                                <span class="badge me-1 mb-1">Web Development</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="leadership-card">
-                    <div class="leadership-icon">🌎</div>
-                    <h3>Hispanic Outreach Program</h3>
-                    <div class="role">Language & Cultural Volunteer</div>
-                    <p>Created and led interactive Spanish lessons for adult English learners to improve language skills
-                        and cultural understanding in the community.</p>
+                <!-- Bug Navigation Algorithm -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card h-100">
+                        <div class="card-body">
+                            <a href="https://github.com/gaonaborgesa/bug-navigation" target="_blank" class="github-icon">
+                                <i class="bi bi-github"></i>
+                            </a>
+                            <h5 class="card-title">Bug Navigation Algorithm</h5>
+                            <p class="card-text">Implemented autonomous navigation system in C++ allowing robot to drive to specific
+                                coordinates and avoid obstacles. Uses odometry, frame transformations, and bug navigation
+                                algorithm to achieve 3cm positioning accuracy.</p>
+                            <div class="mt-3">
+                                <span class="badge me-1 mb-1">C++</span>
+                                <span class="badge me-1 mb-1">Robotics</span>
+                                <span class="badge me-1 mb-1">Autonomous Navigation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fast Food Favorites -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card h-100">
+                        <div class="card-body">
+                            <a href="https://github.com/gaonaborgesa/P1.Community-Board" target="_blank" class="github-icon">
+                                <i class="bi bi-github"></i>
+                            </a>
+                            <h5 class="card-title">Fast Food Favorites</h5>
+                            <p class="card-text">Web application presenting popular fast food chains and their slogans in an organized,
+                                responsive card format. Built with clean UI and cohesive theming.</p>
+                            <div class="mt-3">
+                                <span class="badge me-1 mb-1">HTML/CSS</span>
+                                <span class="badge me-1 mb-1">Responsive Design</span>
+                                <span class="badge me-1 mb-1">UI/UX</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RAG Customer Support Chatbot -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card h-100">
+                        <div class="card-body">
+                            <a href="https://github.com/dixita9/ai_customer_support" target="_blank" class="github-icon">
+                                <i class="bi bi-github"></i>
+                            </a>
+                            <h5 class="card-title">RAG Customer Support Chatbot</h5>
+                            <p class="card-text">Built customer support chatbot using Next.js, Llama API, and ChromaDB to facilitate user
+                                inquiries and provide instant support.</p>
+                            <div class="mt-3">
+                                <span class="badge me-1 mb-1">Next.js</span>
+                                <span class="badge me-1 mb-1">AI/ML</span>
+                                <span class="badge me-1 mb-1">ChromaDB</span>
+                                <span class="badge me-1 mb-1">RAG</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Multilingual Translation Tool -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Multilingual Translation Tool</h5>
+                            <p class="card-text">Python-based translation tool using APIs to enhance multilingual accessibility. Created to
+                                support language learning program for adult English learners.</p>
+                            <div class="mt-3">
+                                <span class="badge me-1 mb-1">Python</span>
+                                <span class="badge me-1 mb-1">APIs</span>
+                                <span class="badge me-1 mb-1">Translation</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="contact">
+    <!-- Leadership Section -->
+    <section id="leadership" class="section-light">
         <div class="container">
-            <h2>Let's Connect!</h2>
-            <p style="font-size: 1.1rem; margin-bottom: 2rem;">I'm actively seeking full-time software engineering
-                opportunities post-graduation in May 2026.</p>
+            <div class="text-center">
+                <h2 class="section-heading">Leadership & Community</h2>
+            </div>
+            <p class="text-center text-muted mb-5">Committed to increasing diversity and inclusion in tech</p>
 
-            <div class="contact-links">
-                <a href="mailto:gaonaborgesa@berea.edu" class="contact-link">
-                    Email
-                    <i class="fas fa-envelope"></i>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <img src="images/leadership/shpe.png" alt="SHPE Logo" class="mb-3">
+                            <h5 class="card-title"><strong>President</strong></h5>
+                            <h6 class="text-primary mb-3">Society of Hispanic Professional Engineers</h6>
+                            <p class="card-text">Leading initiatives and campus events to promote minority engagement in STEM.</p>
+                            <a href="https://shpeberea.github.io/" target="_blank" class="btn btn-outline-primary btn-sm mt-2">
+                                <i class="bi bi-globe"></i> Our Chapter Website
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <img src="images/leadership/gwc.jpg" alt="Girls Who Code Logo" class="mb-3" >
+                            <h5 class="card-title"><strong>Public Relations Officer</strong></h5>
+                            <h6 class="text-primary mb-3">Girls Who Code</h6>
+                            <p class="card-text">Boosting campus presence and participation to foster mentorship and inclusion in computing fields
+                                for women and underrepresented groups.</p>
+                            <a href="https://www.linkedin.com/company/girls-who-code-berea-college-loop/" target="_blank" class="btn btn-outline-primary btn-sm mt-2">
+                                <i class="bi bi-linkedin"></i> View on LinkedIn
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <img src="images/leadership/2celts.jpg" alt="CELTS Logo" class="mb-3" >
+                            <h5 class="card-title"><strong>Hispanic Outreach Program Volunteer</strong></h5>
+                            <h6 class="text-primary mb-3">The Center for Excellence in Learning Through Service</h6>
+                            <p class="card-text">Created and led interactive Spanish lessons for adult English learners to improve language skills
+                                and cultural understanding in the community.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <!-- <section id="contact" class="py-5 bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="mb-3">Let's Connect!</h2>
+            <p class="lead mb-4">I'm actively seeking full-time software engineering opportunities post-graduation in May 2026.</p>
+
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+                <a href="mailto:gaonaborgesa@berea.edu" class="btn btn-light btn-lg">
+                    <i class="bi bi-envelope-fill"></i> Email
                 </a>
-                <a href="https://linkedin.com/in/america-gaona-borges" target="_blank" class="contact-link">
-                    LinkedIn
-                    <i class="fab fa-linkedin"></i>
+                <a href="https://linkedin.com/in/america-gaona-borges" target="_blank" class="btn btn-light btn-lg">
+                    <i class="bi bi-linkedin"></i> LinkedIn
                 </a>
-                <a href="https://github.com/gaonaborgesa" target="_blank" class="contact-link">
-                    GitHub
-                    <i class="fab fa-github"></i>
+                <a href="https://github.com/gaonaborgesa" target="_blank" class="btn btn-light btn-lg">
+                    <i class="bi bi-github"></i> GitHub
                 </a>
-                <a href="America.GaonaBorges_Resume.pdf" class="contact-link" target="_blank">
-                    Resume
-                    <i class="fas fa-file"></i>
+                <a href="America.GaonaBorges_Resume.pdf" class="btn btn-light btn-lg" target="_blank">
+                    <i class="bi bi-file-earmark-text"></i> Resume
                 </a>
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <footer>
-        <div class="container">
-            <p>© 2025 America Gaona Borges | Built with care ✨</p>
+    <!-- Footer (Contact Section) -->
+    <footer id="contact">
+        <h3>Let's Connect!</h2>
+        <p>I'm actively seeking full-time software engineering opportunities post-graduation in May 2026.</p>
+
+        <div class="rounded-social-buttons">
+            <a class="social-button email" href="mailto:gaonaborgesa@berea.edu" target="_blank">
+                <i class="fa fa-envelope" title="Email"></i>
+            </a>
+            <a class="social-button linkedin" href="https://linkedin.com/in/america-gaona-borges" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin" title="LinkedIn"></i>
+            </a>
+            <a class="social-button" href="https://github.com/gaonaborgesa" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github" title="GitHub"></i>
+            </a>
+            <a class="social-button" href="America.GaonaBorges_Resume.pdf" target="_blank" rel="noopener noreferrer">
+                <i class="fa fa-file-text" title="Resume"></i>
+            </a>
         </div>
+
+        <p>© 2025 America Gaona Borges | Built with care ✨</p>
+
+
     </footer>
 
-
-    <!-- Slideshow functionality -->
-    <script src="script.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
