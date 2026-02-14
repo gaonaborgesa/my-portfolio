@@ -1,0 +1,235 @@
+/* Global Styles */
+html, body {
+  font-family: 'Dosis', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  color: #001F5B;
+  scroll-behavior: smooth;
+}
+
+/* Section Styles */
+.section-white {
+  background-color: white;
+  padding: 70px 0;
+}
+
+.section-light {
+  background-color: #f8f9fa;
+  padding: 70px 0;
+}
+
+/* Section Headings */
+.section-heading {
+  font-size: 2.3rem;
+  font-weight: 600;
+  margin-bottom: 2.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.section-heading::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background-color: #9b1999;
+}
+
+/* Button Styles */
+.btn-primary-custom,
+.btn.btn-primary-custom,
+a.btn-primary-custom {
+  background-color: white;
+  border: none;
+  padding: 0.5rem 0.9rem;
+  font-size: 1.0rem;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  color: #9b1999;
+}
+
+.btn-primary-custom:hover,
+.btn.btn-primary-custom:hover,
+a.btn-primary-custom:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.btn-outline-primary,
+.btn.btn-outline-primary,
+a.btn-outline-primary {
+  color: #9b1999;
+  border-color: #9b1999;
+}
+
+.btn-outline-primary:hover,
+.btn.btn-outline-primary:hover,
+a.btn-outline-primary:hover {
+  background-color: #9b1999;
+  color: white;
+  border-color: #9b1999;
+}
+
+/* Card Styles */
+.card {
+  border: none;
+  border-left: 4px solid #9b1999;
+  box-shadow: 0 4px 15px rgba(155, 25, 153, 0.1);
+  font-size: 0.9rem;
+}
+
+.card.custom {
+  border: .5px solid #9b199950;
+  background: #f8f9fa;
+  box-shadow: none;
+  border-radius: 15px;
+}
+
+/* Badge Styles */
+.badge,
+span.badge,
+.card .badge {
+  background-color: #9b19991a !important;
+  color: #9b1999;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.35rem 0.65rem;
+  border: 1px solid #9b199950;
+}
+
+/* Text Utilities */
+.text-muted.custom,
+p.text-muted.custom,
+span.text-muted.custom {
+  color: #9b1999 !important;
+}
+
+
+/* Navbar */
+.navbar {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 5px 0;
+}
+
+.navbar .nav-link {
+  font-weight: 400;
+  margin: 0 5px;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: #9b1999;
+}
+
+
+/* Carousel Styles */
+.carousel {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-inner {
+  position: relative;
+}
+
+.carousel-item {
+  transition: transform 0.6s ease-in-out;
+}
+
+.carousel-item img {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+/* Footer */
+footer {
+  background: linear-gradient(135deg, #9b1999 0%, #9b1999b1 100%);
+  color: white;
+  padding: 50px 0;
+  text-align: center;
+  position: relative; 
+  margin-top: auto;
+  width: 100%;
+}
+
+footer h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+
+/* Social Buttons in Footer */
+.rounded-social-buttons {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.rounded-social-buttons .social-button {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border: 2px solid transparent;
+  padding: 0 2px;
+  text-align: center;
+  color: #9b1999;
+  font-size: 25px;
+  font-weight: normal;
+  line-height: 50px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  margin: 0 10px;
+  background: #ffffff;
+}
+
+.rounded-social-buttons .social-button:hover {
+  transform: scale(1.1) rotate(360deg);
+}
+
+
+/* Responsive Base Styles */
+@media (max-width: 768px) {
+  /* Homepage carousel only */
+  #carouselExampleCaptions .carousel-item img {
+    height: 250px;
+  }
+  
+  .section-heading {
+    font-size: 2rem;
+  }
+}
+
+/* Tablet Breakpoint */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Homepage carousel only */
+  #carouselExampleCaptions .carousel-item img {
+    height: 350px;
+  }
+  
+  .section-heading {
+    font-size: 2.2rem;
+  }
+}
+
+/* Large Desktop Breakpoint */
+@media (min-width: 1441px) {
+  .container {
+    max-width: 1320px;
+  }
+  
+  .section-heading {
+    font-size: 3rem;
+  }
+}
