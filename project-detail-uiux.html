@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berea College CS Slack Optimization - UI/UX Project | America Gaona Borges</title>
+    <meta name="description" content="UI/UX research project reimagining how students discover career opportunities within the Berea College Computer Science community.">
+    <meta name="author" content="America Gaona Borges">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Berea CS Slack Optimization - UI/UX Project">
+    <meta property="og:description" content="UI/UX research project improving opportunity discovery for CS students">
+    <meta property="og:type" content="article">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💙</text></svg>">
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/project-detail.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+        <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html" style="color: #671065;">AGB</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#leadership">Leadership</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <a href="index.html#projects" class="back-button">
+                <i class="bi bi-arrow-left"></i> Back to Portfolio
+            </a>
+            <h1 class="display-4 fw-bold mb-3">Berea CS Slack Optimization</h1>
+            <p class="lead">A UI/UX research project reimagining how students discover career opportunities within the Berea College Computer Science community</p>
+            
+            <div class="project-meta">
+                <div class="project-meta-item">
+                    <i class="bi bi-calendar3"></i>
+                    <span>January 2026</span>
+                </div>
+                <div class="project-meta-item">
+                    <i class="bi bi-briefcase"></i>
+                    <span>UI/UX Research & Prototyping</span>
+                </div>
+                <!-- <div class="project-meta-item">
+                    <i class="bi bi-tools"></i>
+                    <span>Figma, Participatory Design, User Research</span>
+                </div> -->
+            </div>
+            
+            <!-- badges -->
+            <div class="mt-4">
+                <span class="tool-badge">Figma</span>
+                <span class="tool-badge">User Research</span>
+                <span class="tool-badge">Prototyping</span>
+                <span class="tool-badge">Usability Testing</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Statement -->
+    <section class="content-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <p class="section-label">Problem Statement</p>
+                    <h2 class="mb-4">The Challenge</h2>
+                    <p class="lead">Finding the right opportunities has become increasingly difficult, especially with the intense competition in today's job market.</p>
+                    
+                    <p>At Berea College, students and alumni frequently share career-related opportunities with one another through the CS Berea Slack workspace. 
+                        The <strong>jobs_internships_prof_dev</strong> channel serves as the primary hub for "internships, consulting, career exploration, 
+                        part-time and full-time post-graduate opportunities."</p>
+                    
+                    <div class="alert alert-info mt-4" style="background-color: #9b19991a; border-color: #9b199950; color: #9b1999;">
+                        <h5>The Core Problem</h5>
+                        <p class="mb-2">Currently, students lack the time to scroll through numerous posts in the Slack channel. Opportunities with deadlines frequently get buried as new messages appear, and <strong>posts automatically disappear after 90 days</strong>.</p>
+                        <p class="mb-0">Students who aren't constantly checking Slack miss out on valuable chances simply due to poor visibility and limited filtering options.</p>
+                    </div>
+                    
+                    <h4 class="mt-5 mb-3">Target Audience</h4>
+                    <p>Current computer science students at Berea College who use this channel to find opportunities such as internships, jobs, career events, and professional development resources.</p>
+                    
+                    <h4 class="mt-4 mb-3">Constraints</h4>
+                    <ul>
+                        <li>Working within Slack's existing design limitations</li>
+                        <li>The temporary nature of message history (90-day limit)</li>
+                        <li>Diverse needs of students seeking different types of opportunities</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Competitive Analysis -->
+    <section class="content-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <p class="section-label">Research</p>
+                    <h2 class="mb-4">Competitive Analysis</h2>
+                    <p>I analyzed several platforms that help students discover opportunities to understand their strengths and limitations:</p>
+                    
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <h5 class="text-success">✓ Highlights</h5>
+                            <ul>
+                                <li><strong>Filtering and sorting tools</strong> (LinkedIn, Handshake, Notion) make it easier to quickly find opportunities that match interests</li>
+                                <li><strong>Tagging and categorization</strong> (ColorStack, Notion, Trello) create structure and reduce noise</li>
+                                <li><strong>Personalized recommendations</strong> (LinkedIn, Handshake) help users stay aware of deadlines</li>
+                                <li><strong>Community-based communication</strong> (Slack) provides a trusted, student-centric environment</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="text-danger">✗ Limitations</h5>
+                            <ul>
+                                <li>No system combines Slack's community feel with strong organizational tools</li>
+                                <li>ColorStack opportunities page is exclusive to members</li>
+                                <li>Notion/Trello offer great organization but aren't practical for this case</li>
+                                <li>Handshake and job boards lack Slack's authenticity and focus only on traditional listings</li>
+                                <li>Exclude opportunities like fellowships, scholarships, hackathons, grad school applications, research programs, etc.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="alert alert-info mt-4" style="background-color: #9b19991a; border-color: #9b199950; color: #9b1999;">
+                        <h5>Key Takeaway</h5>
+                        <p class="mb-0">These alternatives fail to capture the community-centered nature of Slack and 
+                            lack the broad range of opportunities students need. 
+                            There's an opportunity for a solution that combines persistent, searchable organization with Slack's community authenticity.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- User Personas -->
+    <section class="content-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <p class="section-label">User Research</p>
+                    <h2 class="mb-4">User Personas</h2>
+                    <p>To ensure the design meets real user needs, I developed two key personas representing different stakeholders</p>
+                    
+                    <div class="highlight-box">
+                        <h4>Junior CS Student</h4>
+                        <p class="text-muted"><em>Primary Stakeholder</em></p>
+                        
+                        <div class="row mt-3">
+                            <div class="col-md-6">
+                                <h5 class="text-success">Goals</h6>
+                                <ul>
+                                    <li>Secure a summer internship</li>
+                                    <li>Maintain visa status through opportunities</li>
+                                    <li>Find hackathons, fellowships, and conferences</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h5 class="text-danger">Frustrations</h6>
+                                <ul>
+                                    <li>Overwhelmed by the volume of posts</li>
+                                    <li>Checking Slack feels like a chore</li>
+                                    <li>Misses opportunities due to buried posts</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <p class="mt-3"><strong>Why Olivia?</strong> 
+                            She represents the core users who struggle with volume, timing, and lack of organization within the Slack feed. 
+                            As a busy student juggling coursework and internship searches, she often resorts to platforms like LinkedIn even though 
+                            they don't account for her other interests like hackathons, fellowships, and conferences.</p>
+                    </div>
+                    
+                    <div class="highlight-box">
+                        <h4>Faculty / Opportunity Sharer</h4>
+                        <p class="text-muted"><em>Stakeholder</em></p>
+                        
+                        <div class="row mt-3">
+                            <div class="col-md-6">
+                                <h5 class="text-success">Goals</h5>
+                                <ul>
+                                    <li>Effectively connect students with opportunities</li>
+                                    <li>Share opportunities from industry network</li>
+                                    <li>Support student success</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h5 class="text-danger">Frustrations</h5>
+                                <ul>
+                                    <li>Time constraints for posting</li>
+                                    <li>Unclear indicators of student interest</li>
+                                    <li>Difficulty organizing and prioritizing posts</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <p class="mt-3"><strong>Why Professor Montminy?</strong> 
+                            She represents the faculty perspective - those who share opportunities and want students to succeed. 
+                            Including her ensures the design serves both consumers and contributors of opportunities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Participatory Design -->
+    <section class="content-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <p class="section-label">Research Method</p>
+                    <h2 class="mb-4">Participatory Design Research</h2>
+                    
+                    <h4>Research Goal</h4>
+                    <p>To pinpoint the best layout for displaying opportunities that's easy to read, find, filter, and interact with.</p>
+                                    
+                    <div class="alert alert-info mt-4" style="background-color: #9b19991a; border-color: #9b199950; color: #9b1999;">
+                        <h4>Key Research Questions</h4>
+                        <ul class="mb-0">
+                            <li>How much information should each post display so users can decide if they want to interact further?</li>
+                            <li>How many posts should be shown at once before it becomes cluttered or overwhelming?</li>
+                        </ul>
+                    </div>
+                    
+                    <h4 class="mt-4">Method</h4>
+                    <p>I conducted <strong>Participatory Design sessions</strong> with a diverse group of stakeholders and end-users to discuss different platform layouts.
+                        In these focus groups, I presented various web app layouts and encouraged participants to share their thoughts about each one.
+                    </p>
+                    
+                    <p>This method enabled me to identify what people prioritize, discover similarities between solutions, and record strong opinions on particular layouts and features.</p>
+                    
+                    <h4 class="mt-5 mb-4">Layout Options Presented</h4>
+                    <p>I presented various web app layout options to participants to gather feedback:</p>
+                    <img src="images/uiux-project/research/layout-options.gif" alt="Animated slideshow of various web app layouts used during research" class="demo-gif" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Findings -->
+    <section class="content-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <p class="section-label">Insights</p>
+                    <h2 class="mb-4">Research Findings</h2>
+                    
+                    <h4 class="mb-3">1. Displaying Multiple Opportunities</h4>
+                    <div class="row mt-3">
+                        <div class="col-md-4">
+                            <div class="card custom h-100">
+                                <div class="card-body">
+                                    <h5 class="text-danger">Vertical Scroll ✗</h5>
+                                    <p class="small text-muted">Not well liked</p>
+                                    <ul class="small">
+                                        <li>Easy to lose your place</li>
+                                        <li>Feels exhausting</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card custom h-100">
+                                <div class="card-body">
+                                    <h5 class="text-success">List View ✓</h5>
+                                    <p class="small text-muted">Most preferred</p>
+                                    <ul class="small">
+                                        <li>Quick and easy browse</li>
+                                        <li>Tags are very important</li>
+                                        <li>Include key deadlines in default display</li>
+                                        <li>Better for quick scanning</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card custom h-100">
+                                <div class="card-body">
+                                    <h5 class="text-success">Card View ✓</h5>
+                                    <p class="small text-muted">Also well liked</p>
+                                    <ul class="small">
+                                        <li>Visually appealing</li>
+                                        <li>Cards shouldn't be too big</li>
+                                        <li>Too many cards can be overwhelming</li>
+                                        <li>Better for exploring</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h4 class="mt-5 mb-3">2. Detailed View of Selected Opportunity</h4>
+                    <div class="finding-item">Split Screen: Most disliked - not enough space to view content on either side</div>
+                    <div class="finding-item text-success"><strong>Popup Window: Very well received</strong> - allows users to keep their place without navigating to another page</div>
+                    <div class="finding-item">Accordion View: Some liked the simplicity; others worried it could make the page feel too long</div>
+                    
+                    <h4 class="mt-5 mb-3">3. Data Management (Filtering/Tags/Sorting)</h4>
+                    <div class="finding-item">No strong preference between horizontal filter bar vs. vertical filter panel</div>
+                    <div class="finding-item">Key agreement: Filters should be out of the way - consider collapsible or closable components</div>
+                    
+                    <div class="highlight-box mt-4">
+                        <h5>Critical Design Decision</h5>
+                        <p class="mb-0">
+                            Due to the strong division between List View and Card View preferences, I decided to <strong>offer both viewing 
+                                options</strong> so users can choose the format that best suits their needs at the moment.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prototyping -->
+    <section class="content-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <p class="section-label">Design</p>
+                    <h2 class="mb-4">Prototyping & Development</h2>
+                    
+                    <h4>Initial Sketches</h4>
+                    <p>After gathering feedback, I translated insights into low-fidelity sketches to explore layout, navigation, and information hierarchy.</p>
+
+                    <!-- Sketch Images Grid -->
+                    <div class="sketch-grid">
+                        <img src="images/uiux-project//sketches/myOpportunities.png" alt="Saved Opportunities" class="sketch-image">
+                        <img src="images/uiux-project//sketches/home.png" alt="Home Screen" class="sketch-image">
+                        <img src="images/uiux-project//sketches/popup.png" alt="Detailed View Popup Window" class="sketch-image">
+                    </div> 
+
+                    <div class="alert alert-info mt-4" style="background-color: #9b19991a; border-color: #9b199950; color: #9b1999;">
+                        <h5>Design Priorities</h5>
+                        <ul class="mb-0">
+                            <li><strong>Minimize friction in filtering:</strong> Placed clickable tags immediately beneath the search bar</li>
+                            <li><strong>View flexibility:</strong> Added toggle in top-right corner to switch between list and card view</li>
+                            <li><strong>Deadline visibility:</strong> Made deadlines clearly visible for quick assessment</li>
+                            <li><strong>Popup windows:</strong> Implemented for detailed views to reduce navigation overload</li>
+                        </ul>
+                    </div>
+                    
+                    <h4 class="mt-5">High Priority User Flows</h4>
+                    <ol>
+                        <li><strong>Filter and save an opportunity:</strong> Home Page → Switch to Card View → Filter by "Internship" → Select item to open popup → Click "Save"</li>
+                        <li><strong>Mark saved opportunity as completed:</strong> Home Page → Navigate to "Saved Opportunities" → Mark item as "Done"</li>
+                        <li><strong>Post a new opportunity:</strong> Home Page → Click "Post Opportunity" → Fill out form → Submit</li>
+                    </ol>
+                    
+                    <h4 class="mt-5">Digital Prototype</h4>
+                    <p>I recreated all initial sketches in Figma, refining the design and expanding different states. During this stage, I also added a new page specifically for users who want to post opportunities directly through the app.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Usability Testing -->
+    <section class="content-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <p class="section-label">Validation</p>
+                    <h2 class="mb-4">Usability Testing</h2>
+                    
+                    <h4>Cognitive Walkthrough</h4>
+                    <p>To validate design decisions and test the clarity of user flows, I conducted a cognitive walkthrough using the Figma prototype with a fellow CS student. I observed them completing the three core tasks with no guidance.</p>
+                    
+                    <h5 class="mt-4">Results</h5>
+                    
+                    <div class="card custom mb-2">
+                        <div class="card-body">
+                            <h6 class="card-title text-success">Task 1: Filtering and Saving an Opportunity ✓</h6>
+                            <p class="card-text small mb-0">The participant immediately looked to the top-right corner to switch views - exactly where the toggle was placed. The task was completed smoothly, showing the structure felt familiar and intuitive.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card custom mb-2">
+                        <div class="card-body">
+                            <h6 class="card-title text-warning">Task 2: Marking Opportunity as Completed ⚠</h6>
+                            <p class="card-text small mb-2">Completed without difficulty, but the participant asked what happens to completed opportunities - users may want to revisit them later.</p>
+                            <p class="card-text small mb-0"><strong>Action Taken:</strong> Added a subtle gray "Completed" button below the navigation bar for easy access to previously completed opportunities.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card custom mb-2">
+                        <div class="card-body">
+                            <h6 class="card-title text-success">Task 3: Posting a New Opportunity ✓</h6>
+                            <p class="card-text small mb-2">Completed successfully with no confusion.</p>
+                            <p class="card-text small mb-0"><strong>Future Improvement:</strong> Add a post-management section where users can view or edit opportunities they've personally submitted.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo & Reflection -->
+    <section class="content-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <p class="section-label">Final Deliverable</p>
+                    <h2 class="mb-4">Demo & Reflection</h2>
+                    
+                    <p>This project represents a comprehensive approach to solving a real problem within the Berea College CS community through human-centered design principles.</p>
+                    
+                    <!-- Demo GIF -->
+                    <h4 class="mt-5 mb-3">Interactive Demo</h4>
+                    <p>Below is a walkthrough of the final Figma prototype demonstrating the key user flows:</p>
+                    <img src="images/uiux-project/figma-demo.gif" alt="Animated walkthrough of Figma prototype showing user flows" class="demo-gif" loading="lazy">
+                    
+                    <div class="alert alert-info mt-4" style="background-color: #9b19991a; border-color: #9b199950; color: #9b1999;">
+                        <h5>Key Learnings</h5>
+                        <ul class="mb-0">
+                            <li>The value of collaborative sessions to help uncover user preferences and avoid making assumptions</li>
+                            <li>How to balance competing user needs (e.g., list vs. card views) through flexible design</li>
+                            <li>The importance of usability testing in validating design decisions</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="text-center mt-5">
+                        <a href="https://sites.google.com/view/humancenteredcomputingblog/final" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-2">
+                            <i class="bi bi-box-arrow-up-right"></i> View Complete Project Documentation
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Footer (Contact Section) -->
+    <div id="footer-placeholder"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="script.js"></script>  
+</body>
+
+</html>
