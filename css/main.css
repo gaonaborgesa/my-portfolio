@@ -52,6 +52,7 @@
   font-weight: 700;
   color: #001F5B;
   margin-bottom: 0.5rem;
+  margin-top: 2.5rem;
 }
 
 .project-card .card-text {
@@ -59,14 +60,45 @@
   font-size: 0.9rem;
 }
 
+/* Category Badge in Card */
+.project-card .category-badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  z-index: 1;
+}
+
+.category-badge.web-dev {
+  background-color: #b3c9f9;
+}
+
+.category-badge.uiux {
+  background-color: #f7bef6;
+}
+
+.category-badge.ml-robotics {
+  background-color: #fad7c4;
+}
+
+.category-badge i {
+  font-size: 0.7rem;
+}
+
 /* GitHub Icon in Card */
 .project-card .github-icon {
   position: absolute;
-  bottom: 1rem;
+  top: 1rem;
   right: 1rem;
   color: #9b1999;
-  font-size: 24px;
+  font-size: 25px;
   transition: all 0.3s ease;
+  z-index: 1;
 }
 
 .project-card .github-icon:hover {
