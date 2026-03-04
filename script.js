@@ -15,7 +15,7 @@ function loadFooter() {
             <a class="social-button" href="https://github.com/gaonaborgesa" target="_blank" rel="noopener noreferrer" title="GitHub">
                 <i class="bi bi-github" title="GitHub"></i>
             </a>
-            <a class="social-button" href="America.GaonaBorges_Resume.pdf" target="_blank" rel="noopener noreferrer" title="Resume">
+            <a class="social-button" href="America_GaonaBorges_Resume.pdf" target="_blank" rel="noopener noreferrer" title="Resume">
                 <i class="bi bi-file-earmark-text-fill" title="Resume"></i>
             </a>
         </div>
